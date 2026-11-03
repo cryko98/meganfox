@@ -268,9 +268,8 @@ h3 { font-family: var(--serif); font-size: 1.5rem; margin-bottom: 8px; }
 .sl3 { padding-left: 18vw; color: transparent; -webkit-text-stroke: 2px var(--gold); }
 
 /* Gallery */
-.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; perspective: 1200px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start; }
 .gallery-grid figure { position: relative; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-2); cursor: zoom-in; transition: transform .5s var(--ease), box-shadow .5s; transform-style: preserve-3d; }
-.gallery-grid figure:nth-child(2) { margin-top: 80px; }
 .gallery-grid figure:hover { box-shadow: 0 40px 80px -30px rgba(0,0,0,.8), 0 0 60px -10px rgba(226,116,43,.45); }
 .gallery-grid img { width: 100%; transition: transform .8s var(--ease); }
 .gallery-grid figure:hover img { transform: scale(1.04); }
@@ -334,12 +333,20 @@ h3 { font-family: var(--serif); font-size: 1.5rem; margin-bottom: 8px; }
   .ca code { font-size: .72rem; }
   .badge, .badge-core { width: 110px; height: 110px; left: -8px; bottom: 50px; }
   .badge-core { font-size: 2rem; }
-  .gallery-grid { grid-template-columns: minmax(0, 1fr); }
-  .gallery-grid figure:nth-child(2) { margin-top: 0; }
   .lineup-grid { grid-template-columns: minmax(0, 1fr); }
   .suspect { min-height: 150px; }
   .suspect.winner { grid-column: auto; min-height: 280px; }
   .marquees { height: 140px; }
   .marquee-track { font-size: 1.15rem; }
   .spotlight { display: none; }
+}
+
+/* Gallery: 4-column editorial grid with two featured tiles on wide screens */
+@media (min-width: 1000px) {
+  .gallery-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-flow: dense; align-items: stretch; }
+  .gallery-grid figure { display: flex; flex-direction: column; }
+  .gallery-grid img { flex: 1; min-height: 0; object-fit: cover; }
+  .gallery-grid .featured { grid-column: span 2; grid-row: span 2; }
+  .gallery-grid figcaption { font-size: 1rem; padding: 12px 16px 14px; }
+  .gallery-grid figure:nth-child(1) figcaption, .gallery-grid figure:nth-child(9) figcaption { font-size: 1.3rem; }
 }
