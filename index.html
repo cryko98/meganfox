@@ -9,14 +9,19 @@
   <meta property="og:description" content="Finally, a coin about someone men actually want to see. Paired with $HIMS on Solana.">
   <meta property="og:image" content="/assets/meganfox.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#120c07">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=7">
 </head>
 <body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
 
   <header class="nav">
     <a class="brand" href="#top">
@@ -37,12 +42,19 @@
 
   <main id="top">
 
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <canvas class="embers" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <p class="hero-wordmark" aria-hidden="true">MEGANFOX</p>
+
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Solana &middot; paired with $HIMS</p>
-          <h1>Literally<br><em>a fox.</em></h1>
+          <p class="eyebrow"><span class="dot"></span> Live on Solana &middot; paired with $HIMS</p>
+          <h1 class="split">
+            <span class="line">Literally</span>
+            <span class="line"><em>a fox.</em></span>
+          </h1>
           <p class="lede">Crypto is full of men, yet we keep making coins about other men. <strong>$MEGANFOX</strong> is the coin about someone men actually want to see.</p>
 
           <div class="ca" data-ca="21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP">
@@ -52,83 +64,138 @@
           </div>
 
           <div class="cta">
-            <a class="btn" href="https://jup.ag/tokens/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">Buy on Jupiter</a>
-            <a class="btn btn-ghost" href="https://dexscreener.com/solana/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">DexScreener</a>
-            <a class="btn btn-ghost" href="https://x.com/meganthefoxpf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>&nbsp;Follow on X</a>
+            <a class="btn btn-shine magnetic" href="https://jup.ag/tokens/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">Buy on Jupiter</a>
+            <a class="btn btn-ghost magnetic" href="https://dexscreener.com/solana/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">DexScreener</a>
+            <a class="btn btn-ghost magnetic" href="https://x.com/meganthefoxpf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>&nbsp;Follow</a>
           </div>
         </div>
 
-        <figure class="hero-art">
-          <img src="/assets/meganfox.jpg" alt="A fox with long dark hair posing on a sunlit rock" width="1254" height="1254">
-          <figcaption>Fig. 1 — <em>Vulpes megan</em>, golden hour.</figcaption>
-        </figure>
+        <div class="hero-art">
+          <div class="arch tilt">
+            <img src="/assets/meganfox.jpg" alt="A fox with long dark hair posing on a sunlit rock" width="1254" height="1254">
+            <div class="arch-glare" aria-hidden="true"></div>
+          </div>
+          <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <circle cx="100" cy="100" r="98" class="badge-bg"/>
+            <text><textPath href="#circle">LITERALLY A FOX &#10022; PAIRED WITH $HIMS &#10022; LITERALLY A FOX &#10022; </textPath></text>
+          </svg>
+          <div class="badge-core" aria-hidden="true">🦊</div>
+          <p class="hero-caption">Fig. 1 — <em>Vulpes megan</em>, golden hour.</p>
+        </div>
       </div>
+
+      <a class="scroll-cue" href="#lore" aria-label="Scroll to lore"><span></span></a>
     </section>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>$MEGANFOX</span><span>&#10022;</span><span>LITERALLY A FOX</span><span>&#10022;</span><span>PAIRED WITH $HIMS</span><span>&#10022;</span><span>NO MORE MEN COINS</span><span>&#10022;</span>
-        <span>$MEGANFOX</span><span>&#10022;</span><span>LITERALLY A FOX</span><span>&#10022;</span><span>PAIRED WITH $HIMS</span><span>&#10022;</span><span>NO MORE MEN COINS</span><span>&#10022;</span>
-      </div>
+    <!-- CROSSED MARQUEES -->
+    <div class="marquees" aria-hidden="true">
+      <div class="marquee m1"><div class="marquee-track">
+        <span>$MEGANFOX</span><i>&#10022;</i><span>LITERALLY A FOX</span><i>&#10022;</i><span>PAIRED WITH $HIMS</span><i>&#10022;</i><span>NO MORE MEN COINS</span><i>&#10022;</i>
+        <span>$MEGANFOX</span><i>&#10022;</i><span>LITERALLY A FOX</span><i>&#10022;</i><span>PAIRED WITH $HIMS</span><i>&#10022;</i><span>NO MORE MEN COINS</span><i>&#10022;</i>
+      </div></div>
+      <div class="marquee m2"><div class="marquee-track">
+        <span>ONE FOX</span><i>&#9679;</i><span>ONE PILL</span><i>&#9679;</i><span>UP ONLY</span><i>&#9679;</i><span>GOLDEN HOUR FOREVER</span><i>&#9679;</i>
+        <span>ONE FOX</span><i>&#9679;</i><span>ONE PILL</span><i>&#9679;</i><span>UP ONLY</span><i>&#9679;</i><span>GOLDEN HOUR FOREVER</span><i>&#9679;</i>
+      </div></div>
     </div>
 
+    <!-- LORE -->
     <section id="lore" class="lore">
-      <p class="section-tag">01 &mdash; The Lore</p>
-      <h2>Think about it.</h2>
-      <div class="lore-grid">
-        <div class="lore-text">
-          <p class="big">Crypto is full of men, yet we keep making coins about <em>other men.</em></p>
-          <p>We've had Bike Tyson, Tom Cruise, Bad Bunny and countless other male celebrity coins.</p>
-          <p>Meanwhile, Megan Fox has been promoting boner pills on the timeline almost every day for the past month.</p>
-          <p class="big">Why hasn't anyone made a coin based on someone men <em>actually</em> want to see?</p>
-        </div>
-        <ol class="lore-list">
-          <li><span>Bike Tyson</span><s>man</s></li>
-          <li><span>Tom Cruise</span><s>man</s></li>
-          <li><span>Bad Bunny</span><s>man</s></li>
-          <li><span>Countless others</span><s>men</s></li>
-          <li class="winner"><span>Megan Fox</span><b>literally a fox</b></li>
-        </ol>
+      <div class="lore-head">
+        <p class="section-tag">01 &mdash; The Lore</p>
+        <h2>Think<br><em>about it.</em></h2>
+      </div>
+      <div class="lore-body">
+        <p class="scrub">Crypto is full of men, yet we keep making coins about other men.</p>
+        <p class="scrub">We've had Bike Tyson, Tom Cruise, Bad Bunny and countless other male celebrity coins.</p>
+        <p class="scrub">Meanwhile, Megan Fox has been promoting boner pills on the timeline almost every day for the past month.</p>
+        <p class="scrub punch">Why hasn't anyone made a coin based on someone men <em>actually</em> want to see?</p>
       </div>
     </section>
 
+    <!-- LINEUP -->
+    <section class="lineup">
+      <p class="section-tag">The Lineup</p>
+      <h2>Every celeb coin so far:</h2>
+      <div class="lineup-grid">
+        <article class="suspect"><span class="num">#1</span><h3>Bike Tyson</h3><b class="stamp">MAN</b></article>
+        <article class="suspect"><span class="num">#2</span><h3>Tom Cruise</h3><b class="stamp">MAN</b></article>
+        <article class="suspect"><span class="num">#3</span><h3>Bad Bunny</h3><b class="stamp">MAN</b></article>
+        <article class="suspect"><span class="num">#4</span><h3>Countless others</h3><b class="stamp">MEN</b></article>
+        <article class="suspect winner">
+          <img src="/assets/logo.png" alt="" width="120" height="120" loading="lazy">
+          <span class="num">#5</span><h3>Megan Fox</h3><b class="stamp stamp-gold">LITERALLY A FOX</b>
+        </article>
+      </div>
+    </section>
+
+    <!-- PAIR -->
     <section id="pair" class="pair">
       <p class="section-tag">02 &mdash; The Pair</p>
       <h2>She brings the fox.<br><em>$HIMS brings the pills.</em></h2>
-      <div class="pair-cards">
-        <article class="card">
-          <img src="/assets/logo.png" alt="" width="96" height="96">
+
+      <div class="pair-stage">
+        <div class="coin-wrap">
+          <div class="coin">
+            <div class="coin-face front"><img src="/assets/logo.png" alt="" width="256" height="256"></div>
+            <div class="coin-face back"><span>$MF</span></div>
+          </div>
           <h3>$MEGANFOX</h3>
           <p>The face on your timeline every single day. Literally a fox.</p>
-        </article>
-        <div class="pair-plus" aria-hidden="true">+</div>
-        <article class="card card-hims">
-          <div class="pill" aria-hidden="true"></div>
+        </div>
+
+        <div class="pair-x" aria-hidden="true">
+          <span class="x-line"></span>
+          <span class="x-mark">&times;</span>
+          <span class="x-line"></span>
+        </div>
+
+        <div class="coin-wrap">
+          <div class="pill-stage" aria-hidden="true">
+            <div class="pill"><span></span></div>
+            <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i>
+          </div>
           <h3>$HIMS</h3>
           <p>The company selling the pills she's been promoting. The base pair, the backbone.</p>
-        </article>
+        </div>
       </div>
-      <p class="pair-note">One fox. One pill. Up only.</p>
+
+      <div class="stats">
+        <div><span class="k">Chain</span><span class="v">Solana</span></div>
+        <div><span class="k">Ticker</span><span class="v">$MEGANFOX</span></div>
+        <div><span class="k">Paired with</span><span class="v">$HIMS</span></div>
+        <div><span class="k">Fox purity</span><span class="v"><span class="count" data-to="100">0</span>%</span></div>
+      </div>
     </section>
 
+    <!-- STATEMENT -->
+    <section class="statement" aria-label="Statement">
+      <p class="statement-line sl1">ONE FOX.</p>
+      <p class="statement-line sl2"><em>ONE PILL.</em></p>
+      <p class="statement-line sl3">UP ONLY.</p>
+    </section>
+
+    <!-- GALLERY -->
     <section id="gallery" class="gallery">
       <p class="section-tag">03 &mdash; The Den</p>
       <h2>Literally <em>a fox.</em></h2>
       <div class="gallery-grid">
-        <figure>
+        <figure class="tilt" tabindex="0">
           <img src="/assets/gallery/bike-tyson.jpg" alt="The fox riding Bike Tyson into the sunset" width="1254" height="1254" loading="lazy">
-          <figcaption>Riding Bike Tyson into the sunset.</figcaption>
+          <figcaption><span class="cap-num">01</span> Riding Bike Tyson into the sunset.</figcaption>
         </figure>
-        <figure>
+        <figure class="tilt" tabindex="0">
           <img src="/assets/gallery/hims.jpg" alt="The fox holding a pack of $HIMS pills" width="1024" height="1280" loading="lazy">
-          <figcaption>Performance for real life. <span>(Parody, not a real ad.)</span></figcaption>
+          <figcaption><span class="cap-num">02</span> Performance for real life. <small>(Parody, not a real ad.)</small></figcaption>
         </figure>
       </div>
     </section>
 
+    <!-- CHART -->
     <section id="chart" class="chart">
       <p class="section-tag">04 &mdash; Chart</p>
-      <h2>Watch the fox run.</h2>
+      <h2>Watch the fox <em>run.</em></h2>
       <div class="chart-frame">
         <iframe src="https://dexscreener.com/solana/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP?embed=1&amp;theme=dark&amp;info=0" title="$MEGANFOX chart on DexScreener" loading="lazy"></iframe>
       </div>
@@ -137,13 +204,28 @@
   </main>
 
   <footer class="footer">
-    <img src="/assets/logo.png" alt="" width="56" height="56">
-    <p class="footer-brand">$MEGANFOX</p>
-    <a class="icon-btn footer-x" href="https://x.com/meganthefoxpf" target="_blank" rel="noopener" aria-label="$MEGANFOX on X"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    <div class="footer-cta">
+      <h2>Join the <em>den.</em></h2>
+      <div class="cta">
+        <a class="btn btn-shine magnetic" href="https://jup.ag/tokens/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">Buy $MEGANFOX</a>
+        <a class="btn btn-ghost magnetic" href="https://x.com/meganthefoxpf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>&nbsp;@meganthefoxpf</a>
+      </div>
+      <div class="ca ca-center" data-ca="21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP">
+        <span class="ca-label">CA</span>
+        <code>21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP</code>
+        <button type="button" class="copy" aria-label="Copy contract address">Copy</button>
+      </div>
+    </div>
+    <p class="footer-wordmark" aria-hidden="true">$MEGANFOX</p>
     <p class="disclaimer">$MEGANFOX is a parody memecoin with no intrinsic value or expectation of financial return. It is not affiliated with, endorsed by, or connected to Megan Fox, Hims &amp; Hers Health, Inc. or any of their representatives. Artwork is AI-generated. Not financial advice. DYOR.</p>
   </footer>
 
+  <div class="lightbox" hidden>
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <img alt="">
+  </div>
+
   <div class="toast" role="status" aria-live="polite"></div>
-  <script src="/main.js?v=3"></script>
+  <script src="/main.js?v=7"></script>
 </body>
 </html>
