@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css?v=2">
 </head>
 <body>
 
@@ -26,10 +26,13 @@
     <nav>
       <a href="#lore">Lore</a>
       <a href="#pair">The Pair</a>
-      <a href="#buy">How to Buy</a>
+      <a href="#gallery">Gallery</a>
       <a href="#chart">Chart</a>
     </nav>
-    <a class="btn btn-small" href="https://jup.ag/tokens/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">Buy</a>
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://x.com/tisgambino/status/2117710037355225579" target="_blank" rel="noopener" aria-label="$MEGANFOX on X"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <a class="btn btn-small" href="https://jup.ag/tokens/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">Buy</a>
+    </div>
   </header>
 
   <main id="top">
@@ -51,6 +54,7 @@
           <div class="cta">
             <a class="btn" href="https://jup.ag/tokens/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">Buy on Jupiter</a>
             <a class="btn btn-ghost" href="https://dexscreener.com/solana/21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP" target="_blank" rel="noopener">DexScreener</a>
+            <a class="btn btn-ghost" href="https://x.com/tisgambino/status/2117710037355225579" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>&nbsp;Follow on X</a>
           </div>
         </div>
 
@@ -107,31 +111,16 @@
       <p class="pair-note">One fox. One pill. Up only.</p>
     </section>
 
-    <section id="buy" class="buy">
-      <p class="section-tag">03 &mdash; How to Buy</p>
-      <h2>Four steps to the den.</h2>
-      <ol class="steps">
-        <li>
-          <h3>Get a wallet</h3>
-          <p>Download Phantom, Solflare or Backpack and set up a Solana wallet.</p>
-        </li>
-        <li>
-          <h3>Load SOL</h3>
-          <p>Buy SOL on an exchange and send it to your wallet.</p>
-        </li>
-        <li>
-          <h3>Grab $HIMS</h3>
-          <p>$MEGANFOX is paired with $HIMS. Swap through Jupiter and it routes for you.</p>
-        </li>
-        <li>
-          <h3>Swap for $MEGANFOX</h3>
-          <p>Paste the contract address, confirm the swap, welcome to the den.</p>
-        </li>
-      </ol>
-      <div class="ca ca-wide" data-ca="21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP">
-        <span class="ca-label">CA</span>
-        <code>21sLaTZeDqZJ41ss14MZ7SmrvWgdH2x3xRgV7ZS2B5FP</code>
-        <button type="button" class="copy" aria-label="Copy contract address">Copy</button>
+    <section id="gallery" class="gallery">
+      <p class="section-tag">03 &mdash; The Den</p>
+      <h2>Literally <em>a fox.</em></h2>
+      <div class="gallery-grid">
+        <figure><img src="/assets/gallery/fox-1.jpg" alt="Red fox, gallery image 1" width="1024" height="1024" loading="lazy"></figure>
+        <figure><img src="/assets/gallery/fox-2.jpg" alt="Red fox, gallery image 2" width="1024" height="1024" loading="lazy"></figure>
+        <figure><img src="/assets/gallery/fox-3.jpg" alt="Red fox, gallery image 3" width="1024" height="1024" loading="lazy"></figure>
+        <figure><img src="/assets/gallery/fox-4.jpg" alt="Red fox, gallery image 4" width="1024" height="1024" loading="lazy"></figure>
+        <figure><img src="/assets/gallery/fox-5.jpg" alt="Red fox, gallery image 5" width="1024" height="1024" loading="lazy"></figure>
+        <figure><img src="/assets/gallery/fox-6.jpg" alt="Red fox, gallery image 6" width="1024" height="1024" loading="lazy"></figure>
       </div>
     </section>
 
@@ -148,10 +137,11 @@
   <footer class="footer">
     <img src="/assets/logo.png" alt="" width="56" height="56">
     <p class="footer-brand">$MEGANFOX</p>
+    <a class="icon-btn footer-x" href="https://x.com/tisgambino/status/2117710037355225579" target="_blank" rel="noopener" aria-label="$MEGANFOX on X"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     <p class="disclaimer">$MEGANFOX is a parody memecoin with no intrinsic value or expectation of financial return. It is not affiliated with, endorsed by, or connected to Megan Fox, Hims &amp; Hers Health, Inc. or any of their representatives. Artwork is AI-generated. Not financial advice. DYOR.</p>
   </footer>
 
   <div class="toast" role="status" aria-live="polite"></div>
-  <script src="/main.js"></script>
+  <script src="/main.js?v=2"></script>
 </body>
 </html>
